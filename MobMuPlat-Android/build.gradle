@@ -9,10 +9,6 @@ buildscript {
 apply plugin: 'com.android.application'
 
 android {
-    lintOptions {
-        abortOnError false
-    }
-
     compileSdkVersion 22
     buildToolsVersion "21.1.2"
 
@@ -24,12 +20,16 @@ android {
         main {
             manifest.srcFile 'AndroidManifest.xml'
             java.srcDirs = ['src']
-            resources.srcDirs = ['src']
-            aidl.srcDirs = ['src']
-            renderscript.srcDirs = ['src']
+//            resources.srcDirs = ['src']
+//            aidl.srcDirs = ['src']
+//            renderscript.srcDirs = ['src']
             res.srcDirs = ['res']
             assets.srcDirs = ['assets']
         }
+    }
+
+    lintOptions {
+        abortOnError false
     }
 }
 
@@ -37,5 +37,6 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:support-v4:22.1.1'
     compile 'com.google.android.gms:play-services:7.3.0'
+    compile project(':midi:AndroidMidi')
     compile project(':PdCore')
 }
