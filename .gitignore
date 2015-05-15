@@ -17,3 +17,7 @@ DerivedData
 *.hmap
 # Java
 bin/
+/MobMuPlat-Android/.nb-gradle/
+# Gradle
+.gradle
+.gradletasknamecache
