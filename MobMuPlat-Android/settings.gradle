@@ -1,5 +1,0 @@
-//include ':midi:AndroidMidi'
-//project(':midi:AndroidMidi').projectDir = new File(settingsDir, '../pd-for-android/midi/AndroidMidi')
-
-//include ':PdCore'
-//project(':PdCore').projectDir = new File(settingsDir, '../pd-for-android/PdCore')
