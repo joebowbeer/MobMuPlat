@@ -21,3 +21,4 @@ bin/
 # Gradle
 .gradle
 .gradletasknamecache
+/MobMuPlat-Android/private/
